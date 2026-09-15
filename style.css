@@ -544,55 +544,39 @@ body {
   font-size: 2rem;
   margin-bottom: 8px;
 }
-/* ===================================================
-   BOTÃO FLUTUANTE IDÊNTICO AO WHATSAPP OFICIAL
-   =================================================== */
-.whatsapp-flutuante {
+/* BOTÃO FLUTUANTE COM IMAGEM */
+.whatsapp-flutuante-img {
   position: fixed;
   bottom: 24px;
   right: 24px;
   width: 60px;
   height: 60px;
-  background-color: #25D366; /* Verde oficial da imagem */
+  z-index: 99999; /* Fica acima de qualquer outro elemento */
+  display: block;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-  z-index: 9999;
-  cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.2s ease;
-  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.whatsapp-icone-svg {
-  width: 44px;
-  height: 44px;
+.whatsapp-flutuante-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
   display: block;
 }
 
-.whatsapp-flutuante:hover {
-  background-color: #20ba5a;
-  transform: scale(1.08);
+.whatsapp-flutuante-img:hover {
+  transform: scale(1.1);
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
 }
 
-.whatsapp-flutuante:active {
-  transform: scale(0.95);
-}
-
-/* Telas menores (Mobile) */
 @media (max-width: 640px) {
-  .whatsapp-flutuante {
+  .whatsapp-flutuante-img {
     bottom: 18px;
     right: 18px;
-    width: 54px;
-    height: 54px;
-  }
-
-  .whatsapp-icone-svg {
-    width: 40px;
-    height: 40px;
+    width: 52px;
+    height: 52px;
   }
 }
 .faq-section {
