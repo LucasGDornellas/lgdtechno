@@ -1,0 +1,229 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: sans-serif;
+    padding: 40px;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1{
+    color: #38bdf8;
+}
+
+.cards-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 250px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover{
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+}
+
+.card h3{
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+.card p{
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+.btn-contato {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-contato:hover{
+    background-color: #1d4ed8;
+}
+
+.cabecalho{
+    border-bottom: 1px solid #334155;
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+
+.nav-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #38bdf8;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a{
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.menu a:hover{
+    color:#f8fafc;
+}
+
+.diferenciais {
+  margin-top: 60px;
+}
+
+.diferenciais h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #f8fafc;
+}
+
+.diferenciais-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.diferencial-item {
+  flex: 1 1 220px; 
+  background-color: #162032; 
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.diferencial-item:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+}
+
+.diferencial-item .icone {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.diferencial-item h3 {
+  font-size: 1.1rem;
+  color: #38bdf8;
+  margin-bottom: 8px;
+}
+
+.diferencial-item p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+.contato-form-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.contato-form-section h2 {
+  color: #f8fafc;
+  margin-bottom: 8px;
+}
+
+.form-subtitulo {
+  color: #94a3b8;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.form-box {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: left;
+}
+
+.campo {
+  margin-bottom: 20px;
+}
+
+.campo label {
+  display: block;
+  font-size: 0.9rem;
+  color: #f8fafc;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 12px;
+  color: #f8fafc;
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-color: #38bdf8;
+}
+
+.btn-enviar {
+  width: 100%;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #1d4ed8;
+}
