@@ -1018,3 +1018,134 @@ body {
   color: #38bdf8;
   text-decoration: underline;
 }
+/* ===================================================
+   OTIMIZAÇÕES RESPONSIVAS (MOBILE FIRST / ADAPTAÇÃO)
+   =================================================== */
+
+/* Evita que qualquer elemento force barra de rolagem lateral */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Telas até 768px (Tablets e Smartphones) */
+@media (max-width: 768px) {
+  
+  /* 1. Cabeçalho e Menu */
+  .nav-box {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 10px;
+    text-align: center;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 18px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li a {
+    font-size: 0.95rem;
+    padding: 6px 4px;
+  }
+
+  /* 2. Tipografia e Seções Gerais */
+  h1 {
+    font-size: 1.8rem !important;
+    line-height: 1.25 !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .subtitulo-secao,
+  .hero-subtitulo {
+    font-size: 0.95rem !important;
+  }
+
+  /* 3. Ajuste de Grids para 1 Coluna em Telas Menores */
+  .servicos-grid,
+  .planos-grid,
+  .passos-grid,
+  .publico-grid,
+  .seguranca-grid,
+  .escopo-grid,
+  .valores-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* 4. Tabela de Comparação (Scroll horizontal suave) */
+  .tabela-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tabela-comparativa {
+    min-width: 520px; /* Garante que a tabela não fique ilegível e permita deslizar */
+  }
+
+  .tabela-comparativa th,
+  .tabela-comparativa td {
+    padding: 12px 14px;
+    font-size: 0.85rem;
+  }
+
+  /* 5. Formulário de Contato e Consentimento LGPD */
+  .form-contato,
+  .formulario-card {
+    padding: 20px 15px !important;
+    width: 100% !important;
+  }
+
+  .campo-lgpd {
+    margin: 16px 0 20px;
+  }
+
+  .texto-lgpd {
+    font-size: 0.8rem;
+  }
+
+  /* 6. Botão Flutuante do WhatsApp */
+  .whatsapp-flutuante,
+  .btn-whatsapp {
+    bottom: 18px;
+    right: 18px;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Telas muito pequenas (Smartphones até 480px) */
+@media (max-width: 480px) {
+  .logo span {
+    font-size: 1.25rem;
+  }
+
+  .logo-icone {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu {
+    gap: 8px 14px;
+  }
+
+  .menu li a {
+    font-size: 0.88rem;
+  }
+}
