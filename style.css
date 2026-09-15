@@ -700,3 +700,63 @@ body {
   color: #94a3b8;
   line-height: 1.5;
 }
+/* ===================================================
+   TABELA COMPARATIVA (PLANOS)
+   =================================================== */
+.comparativo-section {
+  margin: 70px 0 40px;
+}
+
+.comparativo-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.tabela-container {
+  overflow-x: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+}
+
+.tabela-comparativa {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1e293b;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.tabela-comparativa th,
+.tabela-comparativa td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #334155;
+}
+
+.tabela-comparativa th {
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.tabela-comparativa tr:last-child td {
+  border-bottom: none;
+}
+
+.tabela-comparativa td {
+  color: #cbd5e1;
+}
+
+.tabela-comparativa .destaque-coluna {
+  background-color: rgba(56, 189, 248, 0.06);
+  color: #f8fafc;
+}
+
+.tabela-comparativa th.destaque-coluna {
+  background-color: rgba(37, 99, 235, 0.25);
+  color: #38bdf8;
+}
