@@ -45,41 +45,46 @@
       <h2>Solicite um Orçamento</h2>
       <p class="form-subtitulo">Preencha o formulário para enviar sua solicitação diretamente ao nosso WhatsApp ou para alinhamento técnico prévio.</p>
 
-      <form id="form-orcamento" class="form-box">
-        <div class="form-group">
-          <label for="nome">Nome Completo / Razão Social:</label>
-          <input type="text" id="nome" name="nome" placeholder="Digite seu nome ou empresa" required>
-        </div>
+<form id="formContato" class="formulario-contato">
+  <div class="campo-grupo">
+    <label for="nome">Nome Completo *</label>
+    <input type="text" id="nome" placeholder="Seu nome" required>
+  </div>
 
-        <div class="form-group">
-          <label for="servico">Tipo de Demanda:</label>
-          <select id="servico" name="servico" required>
-            <option value="" disabled selected>Selecione uma opção</option>
-            <option value="Plano Mensal de Suporte Tecnológico (R$ 400/mês)">Plano Mensal de Suporte (R$ 400/mês)</option>
-            <option value="Atendimento Presencial Avulso (R$ 150/diária)">Atendimento Presencial Avulso (R$ 150/diária)</option>
-            <option value="Manutenção e Reparo de Computadores">Manutenção e Reparo de Computadores</option>
-            <option value="Redes, Roteadores e Conectividade">Redes, Roteadores e Conectividade</option>
-            <option value="Outros Serviços Sob Demanda">Outros Serviços Sob Demanda</option>
-          </select>
-        </div>
+  <div class="campo-grupo">
+    <label for="email">E-mail *</label>
+    <input type="email" id="email" placeholder="seuemail@empresa.com" required>
+  </div>
 
-        <div class="form-group">
-          <label for="detalhes">Descrição da Necessidade Técnica:</label>
-          <textarea id="detalhes" name="detalhes" rows="4" placeholder="Descreva os equipamentos, falhas ou detalhes do suporte necessário..." required></textarea>
-        </div>
-<!-- CONSENTIMENTO LGPD -->
-        <div class="campo-lgpd">
-          <label class="checkbox-container">
-            <input type="checkbox" name="consentimento_lgpd" required>
-            <span class="checkmark"></span>
-            <span class="texto-lgpd">
-              Concordo com o tratamento dos dados informados para fins exclusivos de contato comercial e elaboração de orçamento, conforme a <a href="privacidade.html" target="_blank">Política de Privacidade</a>.
-            </span>
-          </label>
-        </div>
-        <button type="submit" class="btn-contato btn-plano-full">Enviar Demanda via WhatsApp</button>
-      </form>
-    </section>
+  <div class="campo-grupo">
+    <label for="telefone">WhatsApp / Telefone *</label>
+    <input type="tel" id="telefone" placeholder="(11) 99999-9999" required>
+  </div>
+
+  <div class="campo-grupo">
+    <label for="empresa">Empresa</label>
+    <input type="text" id="empresa" placeholder="Nome da empresa (opcional)">
+  </div>
+
+  <div class="campo-grupo">
+    <label for="mensagem">Mensagem / Demanda *</label>
+    <textarea id="mensagem" rows="4" placeholder="Descreva sua necessidade ou problema técnico..." required></textarea>
+  </div>
+
+  <!-- CHECKBOX LGPD -->
+  <div class="campo-lgpd">
+    <label class="checkbox-container">
+      <input type="checkbox" id="consentimento_lgpd" required>
+      <span class="checkmark"></span>
+      <span class="texto-lgpd">
+        Concordo com o tratamento dos dados informados para fins exclusivos de contato comercial, conforme a <a href="privacidade.html" target="_blank">Política de Privacidade</a>.
+      </span>
+    </label>
+  </div>
+
+  <button type="submit" class="btn-enviar">Enviar Demanda via WhatsApp</button>
+</form>    
+</section>
   </div>
 
  <!-- RODAPÉ UNIFICADO E CONFORME LGPD -->
@@ -100,6 +105,34 @@
     <path d="M16 2a13.9 13.9 0 0 0-12 21L2 30l7.2-1.9A13.9 13.9 0 1 0 16 2zm0 25.5a11.5 11.5 0 0 1-5.9-1.6l-.4-.3-4.3 1.1 1.2-4.2-.3-.4a11.6 11.6 0 1 1 9.4 5.4zm6.4-8.6c-.3-.2-2-.1-2.3-1.1-.3-.2-.6-.3-.9.1s-1.1 1.4-1.3 1.6-.5.2-.8.1a10.8 10.8 0 0 1-3.2-2 11.8 11.8 0 0 1-2.2-2.7c-.2-.4 0-.6.1-.8.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.9-2.2-1.2-3c-.3-.8-.7-.7-.9-.7h-.8a1.6 1.6 0 0 0-1.2.6 5 5 0 0 0-1.5 3.7c0 2.2 1.6 4.3 1.8 4.6.2.3 3.1 4.8 7.7 6.7 1.1.4 2 .7 2.7.9 1.1.4 2.1.3 2.9.2.9-.1 2.8-1.1 3.2-2.3.4-1.1.4-2.1.3-2.3-.2-.1-.5-.2-.9-.4z"/>
   </svg>
 </a>
+<script>
+  document.getElementById('formContato').addEventListener('submit', function(e) {
+    e.preventDefault(); // Impede o recarregamento da tela
 
+    // INSIRA AQUI O SEU NÚMERO (com 55 + DDD, apenas números)
+    const telefoneDestino = "5511998541672"; 
+
+    // Captura os dados preenchidos
+    const nome = document.getElementById('nome').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const telefone = document.getElementById('telefone').value.trim();
+    const empresa = document.getElementById('empresa') ? document.getElementById('empresa').value.trim() : "";
+    const mensagem = document.getElementById('mensagem').value.trim();
+
+    // Monta o texto organizado para a conversa
+    let texto = `*Novo Contato via Site - LGDTechno*\n\n`;
+    texto += `*Nome:* ${nome}\n`;
+    texto += `*E-mail:* ${email}\n`;
+    texto += `*Telefone:* ${telefone}\n`;
+    if (empresa) {
+      texto += `*Empresa:* ${empresa}\n`;
+    }
+    texto += `\n*Demanda informada:*\n${mensagem}`;
+
+    // Gera o link oficial e abre o WhatsApp com os dados preenchidos
+    const url = `https://wa.me/5511998541672?text=Olá,%20gostaria%20de%20entrar%20em%20contato%20com%20a%20LGDTechno.%20Segue%20minha%20mensagem:%0A${encodeURIComponent(texto)}`;
+    window.open(url, '_blank');
+  });
+</script>
 </body>
 </html>
