@@ -392,3 +392,18 @@ h1{
     display: inline-block;
   }
 }
+.sobre-imagem {
+  flex: 0 1 320px;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-imagem img {
+  width: 100%;
+  max-width: 300px; 
+  max-height: 380px; 
+  border-radius: 12px;
+  border: 1px solid #334155;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  object-fit: cover; 
+}
