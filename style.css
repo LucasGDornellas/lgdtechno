@@ -326,3 +326,69 @@ h1{
   text-align: left; 
   box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  .nav-box {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .apresentacao {
+    text-align: center;
+  }
+
+  .apresentacao .btn-contato {
+    margin: 0 auto;
+  }
+
+  .cards-container,
+  .diferenciais-grid,
+  .planos-grid,
+  .termos-grid {
+    justify-content: center;
+  }
+
+  .card,
+  .diferencial-item {
+    text-align: center;
+  }
+
+  .sobre-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .valores-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-box {
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .contato-form-section {
+    align-items: center;
+    text-align: center;
+  }
+
+  .plano-preco {
+    justify-content: center;
+  }
+
+  .plano-features {
+    text-align: left;
+    display: inline-block;
+  }
+}
