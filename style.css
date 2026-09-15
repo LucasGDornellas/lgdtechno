@@ -988,3 +988,54 @@ body {
 .texto-lgpd a:hover {
   color: #60a5fa;
 }
+/* ===================================================
+   PÁGINA DE POLÍTICA DE PRIVACIDADE
+   =================================================== */
+.pagina-privacidade {
+  padding: 60px 20px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.conteudo-privacidade h1 {
+  font-size: 2.2rem;
+  color: #f8fafc;
+  margin-bottom: 6px;
+}
+
+.data-atualizacao {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 35px;
+}
+
+.texto-legal h2 {
+  font-size: 1.3rem;
+  color: #38bdf8;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.texto-legal p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.texto-legal ul {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+
+.texto-legal ul li {
+  margin-bottom: 8px;
+}
+
+.texto-legal a {
+  color: #38bdf8;
+  text-decoration: underline;
+}
