@@ -288,3 +288,9 @@ h1{
   font-size: 0.88rem;
   line-height: 1.5;
 }
+
+.btn-plano-full {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
