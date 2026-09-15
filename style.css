@@ -624,20 +624,22 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px; 
+  gap: 10px;
   font-size: 1.4rem;
   font-weight: 800;
   letter-spacing: -0.5px;
   color: #f8fafc;
-}
-
-.logo span span {
-  color: #38bdf8; 
+  text-decoration: none; 
 }
 
 .logo-icone {
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   border-radius: 8px;
   object-fit: cover;
+  display: block;
+}
+
+.destaque-logo {
+  color: #38bdf8; 
 }
