@@ -1,119 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LGDTechno</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-
-    <header class="cabecalho">
-      <div class="container nav-box">
-        <div class="logo">LGD <span>Techno</span></div>
-        <nav>
-          <ul class="menu">
-            <li><a href="index.html" class="active">Início</a></li>
-            <li><a href="planos.html">Planos</a></li>
-            <li><a href="sobre.html">Quem Somos</a></li>
-            <li><a href="#orcamento">Contato</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LGDTechno | Soluções em Tecnologia e Suporte Técnico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container nav-box">
+      <div class="logo">LGD <span>Techno</span></div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html" class="active">Início</a></li>
+          <li><a href="planos.html">Planos</a></li>
+          <li><a href="sobre.html">Quem Somos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container apresentacao">
+      <h1>Infraestrutura e Suporte de TI para a sua Empresa Não Parar</h1>
+      <p>
+        Atendimento técnico especializado presencial e remoto em São Paulo. Estabilidade, segurança preventiva e suporte sob medida para o seu fluxo de trabalho.
+      </p>
+      <div class="hero-botoes">
+        <a href="contato.html" class="btn-contato">Solicitar Atendimento</a>
+        <a href="planos.html" class="btn-plano">Ver Planos Mensais</a>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <div class="container">
-      
-      <section class="apresentacao">
-        <h1>Suporte e Soluções em TI</h1>
-        <p>
-          Atendimento rápido e especializado em redes, formatação e suporte técnico para a sua empresa.<br>
-          Entre em contato conosco para nos conhecer.
-        </p>
-        <a href="https://wa.link/bamt0f" target="_blank" class="btn-contato">Solicitar Atendimento</a>
-      </section>
+  <main class="container secao-conteudo">
+    <section class="servicos">
+      <h2>Especialidades Técnicas</h2>
+      <p class="subtitulo-secao">Soluções completas para manter computadores, servidores e conexões operando com máximo desempenho.</p>
 
-      <section class="servicos" id="servicos">
-        <h2>Serviços Oferecidos</h2>
-        <div class="cards-container">
-          <div class="card">
-            <h3>Suporte HelpDesk</h3>
-            <p>Atendimento remoto rápido, resolução de falhas no Windows e suporte ao usuário.</p>
-          </div>
-          <div class="card">
-            <h3>Redes & Conectividade</h3>
-            <p>Mapeamento de rede local, otimização de sinal Wi-Fi e configuração de roteadores.</p>
-          </div>
-          <div class="card">
-            <h3>Upgrades & Otimização</h3>
-            <p>Instalação de SSD, expansão de memória e manutenção preventiva de hardware.</p>
-          </div>
-      <section class="contato-form-section" id="orcamento">
-        <h2>Solicitar Orçamento Rápido</h2>
-        <p class="form-subtitulo">Preencha os campos abaixo para iniciar o atendimento diretamente pelo WhatsApp.</p>
+      <div class="cards-container">
+        <article class="card">
+          <div class="card-icone">🖥️</div>
+          <h3>HelpDesk & Manutenção</h3>
+          <p>Diagnóstico de hardware, reparo de falhas no Windows, remoção de malwares e otimização preventiva de computadores e notebooks.</p>
+        </article>
 
-        <form id="formWhatsapp" class="form-box">
-          <div class="campo">
-            <label for="nome">Seu Nome:</label>
-            <input type="text" id="nome" placeholder="Ex: Carlos Silva" required>
-          </div>
+        <article class="card">
+          <div class="card-icone">🌐</div>
+          <h3>Redes & Conectividade</h3>
+          <p>Estruturação de cabeamento de rede, roteadores, switches, repetidores e pontos de acesso Wi-Fi de alta cobertura.</p>
+        </article>
 
-          <div class="campo">
-            <label for="servico">Serviço de Interesse:</label>
-            <select id="servico" required>
-              <option value="">Selecione uma opção...</option>
-              <option value="Suporte HelpDesk / Formatação">Suporte HelpDesk / Formatação</option>
-              <option value="Mapeamento e Configuração de Rede">Mapeamento e Configuração de Rede</option>
-              <option value="Upgrade de Hardware / Manutenção">Upgrade de Hardware / Manutenção</option>
-              <option value="Outro / Dúvida Geral">Outro / Dúvida Geral</option>
-            </select>
-          </div>
-
-          <div class="campo">
-            <label for="mensagem">Descreva brevemente o problema:</label>
-            <textarea id="mensagem" rows="3" placeholder="Ex: Preciso configurar um roteador e trocar o HD por SSD..." required></textarea>
-          </div>
-
-          <button type="submit" class="btn-enviar">Enviar para o WhatsApp 📲</button>
-        </form>
-      </section>
-        </div>
-      </section>
-      <section class="diferenciais">
-        <h2> Por que escolher a LGDTechno?</h2>
-        <div class="diferenciais-grid">
-            <div class="diferencial-item">
-                <span class="icone">⚡</span>
-                <h3>Atendimento Ágil</h3>
-                <p>Diagnóstico inicial rápido e suporte remoto imediato para emergências operacionais.</p>
-            </div>
-            <div class="diferencial-item">
-            <span class="icone">💼</span>
-            <h3>Atendimento PJ & PF</h3>
-            <p>Emissão de Nota Fiscal (CNPJ regularizado), contratos mensais e relatórios técnicos transparentes.</p>
-          </div>
-          <div class="diferencial-item">
-            <span class="icone">🛡️</span>
-            <h3>Garantia & Segurança</h3>
-            <p>Compromisso com a integridade dos seus dados e garantia formal em todos os serviços prestados.</p>
-          </div>
-
-          <div class="diferencial-item">
-            <span class="icone">📍</span>
-            <h3>Flexibilidade</h3>
-            <p>Suporte remoto via ferramentas seguras e visitas técnicas presenciais em toda a região de SP.</p>
-          </div>
-        </div>
-      </section>
-
-    </div> 
-
-    <footer class="rodape" id="contato">
-      <div class="container rodape-conteudo">
-        <p>&copy; 2026 LGDTechno. Todos os direitos reservados.</p>
-        <p>Atendimento remoto e presencial em São Paulo e região.</p>
+        <article class="card">
+          <div class="card-icone">🔒</div>
+          <h3>Acesso Remoto & Segurança</h3>
+          <p>Implantação de VPNs seguras para rotinas de Home Office, rotinas ativas de backup de dados e gestão de acessos.</p>
+        </article>
       </div>
-    </footer>
-    <script src="script.js"></script>
-  </body> 
+    </section>
+    <section class="diferenciais-section">
+      <h2>Por que escolher a LGDTechno?</h2>
+      <p class="subtitulo-secao">Garantia de atendimento técnico qualificado, ágil e formalizado para o seu negócio.</p>
+
+      <div class="cards-container">
+        <article class="card">
+          <div class="card-icone">⚡</div>
+          <h3>Atendimento Ágil</h3>
+          <p>Suporte remoto rápido para resolver incidentes emergenciais sem interromper a rotina de trabalho da sua equipe.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icone">🛡️</div>
+          <h3>Foco Preventivo</h3>
+          <p>Manutenção proativa e monitoramento contínuo para evitar travamentos, paradas inesperadas e perdas de arquivos.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icone">📄</div>
+          <h3>Contrato Formal e NF</h3>
+          <p>Transparência total com segurança jurídica, termos contratuais claros e emissão de nota fiscal para empresas[cite: 1].</p>
+        </article>
+      </div>
+    </section>
+    <section class="chamada-plano">
+      <div class="chamada-conteudo">
+        <h2>Precisa de suporte contínuo para o seu escritório?</h2>
+        <p>Contratos mensais com atendimentos online ilimitados e até 5 visitas presenciais inclusas por mês[cite: 1].</p>
+      </div>
+      <a href="planos.html" class="btn-contato">Conhecer o Plano Mensal</a>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p>&copy; 2026 LGDTechno - CNPJ: 67.895.891/0001-62. Todos os direitos reservados[cite: 1].</p>
+      <p>Atendimento presencial e remoto na Comarca de São Paulo/SP e região[cite: 1].</p>
+    </div>
+  </footer>
+
+</body>
 </html>
