@@ -3,91 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato e Orçamento | LGDTechno</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="description" content="Suporte em TI, manutenção técnica e contratos mensais para empresas e home office em São Paulo.">
-<meta property="og:title" content="LGDTechno | Soluções em Tecnologia e Suporte Técnico">
-<meta property="og:description" content="Atendimento presencial e remoto especializado em São Paulo. Estabilidade operacional e infraestrutura de TI.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://lgdtechno.vercel.app/">
-<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LGDTechno | Soluções em Tecnologia</title>
+  <title>Contato & Suporte | LGDTechno</title>
   
-  <link rel="icon" type="image/x-icon" href="favicon.ico.png">
-  <link rel="icon" type="image/png" href="favicon.png.png">
-
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- CABEÇALHO -->
   <header class="cabecalho">
     <div class="container nav-box">
       <a href="index.html" class="logo">
-        <img src="favicon.png.png" alt="Logo LGDTechno" class="logo-icone">
+        <img src="favicon.png" alt="Logo LGDTechno" class="logo-icone">
         <span>LGD <span class="destaque-logo">Techno</span></span>
       </a>
 
       <nav>
         <ul class="menu">
-          <li><a href="index.html" >Início</a></li>
+          <li><a href="index.html">Início</a></li>
           <li><a href="planos.html">Planos</a></li>
           <li><a href="sobre.html">Quem Somos</a></li>
-          <li><a href="privacidade.html">Privacidade</a></li>
-          <li><a href="contato.html" class="active">Contato</a></li>
+          <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <div class="container">
-    <section class="contato-form-section">
-      <h2>Solicite um Orçamento</h2>
-      <p class="form-subtitulo">Preencha o formulário para enviar sua solicitação diretamente ao nosso WhatsApp ou para alinhamento técnico prévio.</p>
+  <!-- ⬇️ COLE O BLOCO AQUI (CONTEÚDO PRINCIPAL) ⬇️ -->
+  <main class="container pagina-contato">
+    <div class="formulario-card">
+      <div class="formulario-cabecalho">
+        <h2>Fale Conosco</h2>
+        <p>Preencha os campos abaixo para iniciar o atendimento direto com nossa equipe técnica via WhatsApp.</p>
+      </div>
 
-<form id="formContato" class="formulario-contato">
-  <div class="campo-grupo">
-    <label for="nome">Nome Completo *</label>
-    <input type="text" id="nome" placeholder="Seu nome" required>
-  </div>
+      <form id="formContato" class="formulario-contato">
+        <div class="campo-grupo">
+          <label for="nome">Nome Completo <span class="obrigatorio">*</span></label>
+          <input type="text" id="nome" placeholder="Digite seu nome" required>
+        </div>
 
-  <div class="campo-grupo">
-    <label for="email">E-mail *</label>
-    <input type="email" id="email" placeholder="seuemail@empresa.com" required>
-  </div>
+        <div class="campo-grupo">
+          <label for="email">E-mail Corporativo ou Pessoal <span class="obrigatorio">*</span></label>
+          <input type="email" id="email" placeholder="seuemail@empresa.com" required>
+        </div>
 
-  <div class="campo-grupo">
-    <label for="telefone">WhatsApp / Telefone *</label>
-    <input type="tel" id="telefone" placeholder="(11) 99999-9999" required>
-  </div>
+        <div class="campo-duplo">
+          <div class="campo-grupo">
+            <label for="telefone">WhatsApp / Telefone <span class="obrigatorio">*</span></label>
+            <input type="tel" id="telefone" placeholder="(11) 99999-9999" required>
+          </div>
 
-  <div class="campo-grupo">
-    <label for="empresa">Empresa</label>
-    <input type="text" id="empresa" placeholder="Nome da empresa (opcional)">
-  </div>
+          <div class="campo-grupo">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" placeholder="Nome da empresa (opcional)">
+          </div>
+        </div>
 
-  <div class="campo-grupo">
-    <label for="mensagem">Mensagem / Demanda *</label>
-    <textarea id="mensagem" rows="4" placeholder="Descreva sua necessidade ou problema técnico..." required></textarea>
-  </div>
+        <div class="campo-grupo">
+          <label for="mensagem">Descrição da Demanda <span class="obrigatorio">*</span></label>
+          <textarea id="mensagem" rows="4" placeholder="Explique resumidamente o problema técnico ou serviço que precisa..." required></textarea>
+        </div>
 
-  <!-- CHECKBOX LGPD -->
-  <div class="campo-lgpd">
-    <label class="checkbox-container">
-      <input type="checkbox" id="consentimento_lgpd" required>
-      <span class="checkmark"></span>
-      <span class="texto-lgpd">
-        Concordo com o tratamento dos dados informados para fins exclusivos de contato comercial, conforme a <a href="privacidade.html" target="_blank">Política de Privacidade</a>.
-      </span>
-    </label>
-  </div>
+        <!-- CONSENTIMENTO LGPD -->
+        <div class="campo-lgpd">
+          <label class="checkbox-container">
+            <input type="checkbox" id="consentimento_lgpd" required>
+            <span class="checkmark"></span>
+            <span class="texto-lgpd">
+              Concordo com o tratamento dos dados informados para fins exclusivos de contato comercial, conforme a <a href="privacidade.html" target="_blank">Política de Privacidade</a>.
+            </span>
+          </label>
+        </div>
 
-  <button type="submit" class="btn-enviar">Enviar Demanda via WhatsApp</button>
-</form>    
-</section>
-  </div>
+        <button type="submit" class="btn-enviar-whats">
+          <span>Enviar Mensagem via WhatsApp</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </main>
+  <!-- ⬆️ FIM DO BLOCO PRINCIPAL ⬆️ -->
 
- <!-- RODAPÉ UNIFICADO E CONFORME LGPD -->
+  <!-- RODAPÉ -->
   <footer class="rodape">
     <div class="container rodape-conteudo">
       <p>© 2026 LGDTechno. Todos os direitos reservados. CNPJ: 67.895.891/0001-62.</p>
@@ -98,41 +100,30 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- SCRIPT DO WHATSAPP -->
+  <script>
+    document.getElementById('formContato').addEventListener('submit', function(e) {
+      e.preventDefault();
 
-<a href="https://wa.link/bamt0f" target="_blank" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
-  <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
-    <path d="M16 2a13.9 13.9 0 0 0-12 21L2 30l7.2-1.9A13.9 13.9 0 1 0 16 2zm0 25.5a11.5 11.5 0 0 1-5.9-1.6l-.4-.3-4.3 1.1 1.2-4.2-.3-.4a11.6 11.6 0 1 1 9.4 5.4zm6.4-8.6c-.3-.2-2-.1-2.3-1.1-.3-.2-.6-.3-.9.1s-1.1 1.4-1.3 1.6-.5.2-.8.1a10.8 10.8 0 0 1-3.2-2 11.8 11.8 0 0 1-2.2-2.7c-.2-.4 0-.6.1-.8.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.9-2.2-1.2-3c-.3-.8-.7-.7-.9-.7h-.8a1.6 1.6 0 0 0-1.2.6 5 5 0 0 0-1.5 3.7c0 2.2 1.6 4.3 1.8 4.6.2.3 3.1 4.8 7.7 6.7 1.1.4 2 .7 2.7.9 1.1.4 2.1.3 2.9.2.9-.1 2.8-1.1 3.2-2.3.4-1.1.4-2.1.3-2.3-.2-.1-.5-.2-.9-.4z"/>
-  </svg>
-</a>
-<script>
-  document.getElementById('formContato').addEventListener('submit', function(e) {
-    e.preventDefault(); // Impede o recarregamento da tela
+      const telefoneDestino = "5511998541672"; 
 
-    // INSIRA AQUI O SEU NÚMERO (com 55 + DDD, apenas números)
-    const telefoneDestino = "5511998541672"; 
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const telefone = document.getElementById('telefone').value.trim();
+      const empresa = document.getElementById('empresa').value.trim() || "Não informada";
+      const mensagem = document.getElementById('mensagem').value.trim();
 
-    // Captura os dados preenchidos
-    const nome = document.getElementById('nome').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const telefone = document.getElementById('telefone').value.trim();
-    const empresa = document.getElementById('empresa') ? document.getElementById('empresa').value.trim() : "";
-    const mensagem = document.getElementById('mensagem').value.trim();
+      let texto = `*Novo Contato via Site - LGDTechno*\n\n`;
+      texto += `*Nome:* ${nome}\n`;
+      texto += `*E-mail:* ${email}\n`;
+      texto += `*Telefone:* ${telefone}\n`;
+      texto += `*Empresa:* ${empresa}\n\n`;
+      texto += `*Demanda:*\n${mensagem}`;
 
-    // Monta o texto organizado para a conversa
-    let texto = `*Novo Contato via Site - LGDTechno*\n\n`;
-    texto += `*Nome:* ${nome}\n`;
-    texto += `*E-mail:* ${email}\n`;
-    texto += `*Telefone:* ${telefone}\n`;
-    if (empresa) {
-      texto += `*Empresa:* ${empresa}\n`;
-    }
-    texto += `\n*Demanda informada:*\n${mensagem}`;
+      const url = `https://wa.me/${telefoneDestino}?text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank');
+    });
+  </script>
 
-    // Gera o link oficial e abre o WhatsApp com os dados preenchidos
-    const url = `https://wa.me/5511998541672?text=Olá,%20gostaria%20de%20entrar%20em%20contato%20com%20a%20LGDTechno.%20Segue%20minha%20mensagem:%0A${encodeURIComponent(texto)}`;
-    window.open(url, '_blank');
-  });
-</script>
 </body>
 </html>
