@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato e Orçamentos | LGDTechno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container nav-box">
+      <div class="logo">LGD <span>Techno</span></div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="planos.html">Planos</a></li>
+          <li><a href="sobre.html">Quem Somos</a></li>
+          <li><a href="contato.html" class="active">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="contato-form-section">
+      <h2>Solicite um Orçamento</h2>
+      <p class="form-subtitulo">Preencha o formulário abaixo ou acione via WhatsApp para atendimento técnico presencial ou remoto.</p>
+
+      <form id="form-orcamento" class="form-box">
+        <div class="form-group">
+          <label for="nome">Seu Nome / Razão Social:</label>
+          <input type="text" id="nome" name="nome" placeholder="Ex: Lucas Gabriel" required>
+        </div>
+
+        <div class="form-group">
+          <label for="servico">Tipo de Demanda:</label>
+          <select id="servico" name="servico" required>
+            <option value="" disabled selected>Selecione um serviço</option>
+            <option value="Plano Mensal Corporativo">Plano Mensal de Suporte Tecnológico (R$ 400/mês)</option>
+            <option value="Visita Tecnica Avulsa">Visita / Diária Técnica Avulsa (R$ 150/diária)</option>
+            <option value="Formatacao e Windows">Instalação e Reparo de Sistema Windows</option>
+            <option value="Redes e Infraestrutura">Configuração de Redes, Roteadores e Wi-Fi</option>
+            <option value="Outros">Outro serviço sob demanda</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="detalhes">Descreva seu equipamento ou problema:</label>
+          <textarea id="detalhes" name="detalhes" rows="4" placeholder="Ex: Preciso de manutenção preventiva e cabeamento em 4 máquinas..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-contato btn-plano-full">Enviar Demanda via WhatsApp</button>
+      </form>
+    </section>
+  </div>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p>&copy; 2026 LGDTechno - CNPJ: 67.895.891/0001-62. Todos os direitos reservados.[cite: 1]</p>
+      <p>Atendimento remoto e presencial na Comarca de São Paulo/SP e região.[cite: 1]</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
