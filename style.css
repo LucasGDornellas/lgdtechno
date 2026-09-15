@@ -760,3 +760,82 @@ body {
   background-color: rgba(37, 99, 235, 0.25);
   color: #38bdf8;
 }
+/* ===================================================
+   ESCOPO DE ATENDIMENTO E POLÍTICA DE PEÇAS
+   =================================================== */
+.escopo-section {
+  margin: 70px 0 50px;
+}
+
+.escopo-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.escopo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.escopo-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.escopo-card.incluso {
+  border-top: 4px solid #38bdf8;
+}
+
+.escopo-card.pecas {
+  border-top: 4px solid #f59e0b;
+}
+
+.escopo-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #38bdf8;
+  background-color: rgba(56, 189, 248, 0.12);
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.tag-alerta {
+  color: #f59e0b;
+  background-color: rgba(245, 158, 11, 0.12);
+}
+
+.escopo-card h3 {
+  color: #f8fafc;
+  font-size: 1.25rem;
+  margin-bottom: 18px;
+}
+
+.escopo-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.escopo-lista li {
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.escopo-lista li strong {
+  color: #f8fafc;
+}
