@@ -621,3 +621,23 @@ body {
   font-size: 0.9rem;
   line-height: 1.5;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #f8fafc;
+}
+
+.logo span span {
+  color: #38bdf8; 
+}
+
+.logo-icone {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+}
